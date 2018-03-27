@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alton's Cook Book</title>
+    <meta charset="utf-8">
+    <style>
+        .pic:hover {
+            animation-play-state: running;
+        }
+        @-webkit-keyframes pulse {
+            from {opacity: 0.0;
+                font-size: 100%;}
+            to {opacity: 1.0;
+                font-size: 200%;}}
+        .appetizer {color: rgb(0, 33, 255);}
+        body {background-color: rgb(230, 216, 152);
+            text-align: center;
+            font-family: 'Courgette', cursive;}
+        h2 {font-family: "Rock Salt", cursive;
+            margin: auto;
+            width: 150px}
+        h1 {font-family: "Satisfy", cursive;
+            margin: auto;
+            width: 300px}
+        h3 {font-family: "Seaweed Script", cursive;
+            margin: auto;
+            width: 200px}
+        table {border: 5px solid black;
+            margin: auto;
+            width: 500px;}
+        ol, ul, li {border: 1px solid black;
+            margin: auto;
+            width: 400px;}
+        th, td {border: 5px solid black;}
+        .pic {border: 15px ridge darkgrey;
+            animation-name: pulse;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;}
+        .navbar {
+            list-style-type: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(255, 58, 217);
+            float: top;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            :hover:not(.active)}
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Alton's Cook Book</h1>
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Seaweed+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+<ul class="navbar">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="index4.html">Appetizers</a></li>
+    <li><a href="index5.html">Main Dishes</a></li>
+    <li><a href="index6.html">Desserts</a></li>
+    <li><a href="index2.html">Word-Guessing Game</a></li>
+    <li><a href="index3.html">Trex Game</a></li>
+</ul>
+<h2 id="recipe-2" class="appetizer">Appetizer</h2>
+<h3 class="appetizer"><marquee>Cereal</marquee></h3>
+
+<img class="pic" src="http://cdn.foodbeast.com.s3.amazonaws.com/content/uploads/2014/03/lucky-charms-7.jpg" alt="Lucky Charms Box" width="200">  <img class="pic" src="http://blog.generalmills.com/wp-content/uploads/New-CTC.jpg" alt="Cinnamon Toast Crunch Box" width="200">
+
+<ul class="appetizer">
+    <li>Time: 2 minutes</li>
+    <li>Serves: 1 person</li>
+</ul>
+
+<table class="appetizer">
+    <thead>
+    <tr>
+        <th><strong>Ingredients</strong></th>
+        <th><strong>Quantity</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <td>Cereal (of your choice)</td>
+    <td>1 Bowl</td>
+    </tbody>
+    <tbody>
+    <td>Milk</td>
+    <td>2 Cups</td>
+    </tbody>
+    <tbody>
+    <td>Bowl</td>
+    <td>1</td>
+    </tbody>
+    <tbody>
+    <td>Spoon</td>
+    <td>1</td>
+    </tbody>
+</table>
+
+<p class="appetizer"><strong>Step 1:</strong> Open the desired cereal and pour into the bowl (DO NOT POUR MILK FIRST).<br><strong>Step 2:</strong> Pour milk over cereal slowly till cereal can almost overflow.<br> <strong>Step 3:</strong> Put spoon in bowl.<br><strong>Step 4: <em>ENJOY!!!</em></strong><br></p>
+
+<p><em><a target="_blank" href="http://allrecipes.com/recipe/44162/homemade-cereal/">For a better cereal website, click here.</a></em></p>
+
+<img class="pic" src= "http://collegerecipes.com/wp-content/uploads/2013/05/Basic-Quesadilla.jpg" alt="Quesadilla on a plate" width="500">
+
+<ul class="appetizer">
+    <li>Time: 15 minutes</li>
+    <li>Serves: 1 person</li>
+</ul>
+
+<table class="appetizer">
+    <thead>
+    <tr>
+        <th><strong>Ingredients</strong></th>
+        <th><strong>Quantity</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <td>Tortilla</td>
+    <td>1</td>
+    </tbody>
+    <tbody>
+    <td>Cheese</td>
+    <td>How ever much<br>you want</td>
+    </tbody>
+    <tbody>
+    <td>Guacamole</td>
+    <td>1 Packet</td>
+    </tbody>
+    <tbody>
+    <td>Butter</td>
+    <td>1/10 Stick</td>
+    </tbody>
+</table>
+
+<p class="appetizer"><strong>Step 1:</strong> Turn stove and put butter on.  Once butter is melted, put tortilla on.<br><strong>Step 2:</strong> Put cheese in tortilla and fold up.  Let sit for 5 min.<br> <strong>Step 3:</strong> Flip constantly until a nice golden brown color starts to show.<br> <strong>Step 4:</strong> Get out plate and place quesadilla on.  Open Guacamole.<br> <strong>Step 5: <em>ENJOY!!!</em></strong> </p>
+
+<p><em><a target="_blank" href="https://www.thekitchn.com/how-to-make-crispy-cheesy-quesadillas-on-the-stove-top-cooking-lessons-from-the-kitchn-188645">For a better Quesadilla website, click here.</a></em></p>
+
+<h2 id="recipe-7" class="appetizer">Appetizer</h2>
+<h3 class="appetizer"><marquee>Spring Rolls</marquee></h3>
+
+<img class="pic" src="http://monishgujral.com/new/wp-content/uploads/2013/05/spring-monish.jpg" alt="Spring rolls on a plate" width="500">
+
+<ul class="appetizer">
+    <li>Time: _ minutes</li>
+    <li>Serves: _ person</li>
+</ul>
+
+<table class="appetizer">
+    <thead>
+    <tr>
+        <th><strong>Ingredients</strong></th>
+        <th><strong>Quantity</strong></th>
+    </tr>
+    </thead>
+    <tbody>
+    <td>_</td>
+    <td>_</td>
+    </tbody>
+    <tbody>
+    <td>_</td>
+    <td>_</td>
+    </tbody>
+    <tbody>
+    <td>_</td>
+    <td>_</td>
+    </tbody>
+    <tbody>
+    <td>_</td>
+    <td>_</td>
+    </tbody>
+</table>
+
+<p class="appetizer"><strong>Step 1:</strong> __<br><strong>Step 2:</strong> __<br> <strong>Step 3:</strong> __<br> <strong>Step 4:</strong> __<br> <strong>Step 5: <em>ENJOY!!!</em></strong> </p>
+<p><em><a target="_blank" href="https://www.finedininglovers.com/recipes/appetizer/spring-roll-recipe/">For a better Spring Roll website, click here.</a></em></p>
+

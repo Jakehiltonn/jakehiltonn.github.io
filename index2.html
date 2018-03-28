@@ -5,34 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Word Guesser Starter Code</title>
-</head>
 <body>
-    <style>
-            .navbarul {
-            list-style-type: none;
-            margin: auto;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
+<style>
+    .navbarul {
+        list-style-type: none;
+        margin: auto;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        width: 500px;
+
+    }
+    body {
+        text-align: center;
+    }
+    li {
+        margin: auto;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+
+    .active {
+        background-color: #4CAF50;}
+    h1 {font-family: "Satisfy", cursive;
+        text-align: center;
         }
-        li {
-            margin: auto;
-        }
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        li a:hover:not(.active) {
-            background-color: #111;
-        }
-        .active {
-            background-color: #4CAF50;}
-    </style>
-</head>
-<body>
+</style>
 
 <h1>JJakeyJJ's Cook Book</h1>
 <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
@@ -41,7 +49,7 @@
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
 <ul class="navbarul">
-    <li><a class="active" href="altons%20cook%20book.html">Home</a></li>
+    <li><a class="active" href="index.html">Home</a></li>
     <li><a href="index4.html">Appetizers</a></li>
     <li><a href="index5.html">Main Dishes</a></li>
     <li><a href="index6.html">Desserts</a></li>
@@ -65,16 +73,13 @@
     var guessDisplay = document.getElementById("guess_display");
     var guessInput = document.getElementById("guess_input");
     var guessStatus = document.getElementById("guess_status");
-
     // Initialize game state variables
-    var secretWord = "jjakeyjj";
+    var secretWord = "lasagna";
     var guessedWord = [];
     var guessedLetters = [];
     for (var i = 0; i < secretWord.length; i++) {
         guessedWord[i] = "_";
     }
-
-
     // Returns true if its a correct guess -
     //  if the letter is anywhere in the word
     // Also updates guessedWord and guessedLetters
@@ -89,21 +94,15 @@
         guessedLetters.push(letter);
         return foundLetter;
     };
-
     // Returns true if they guessed the whole word
     var hasWon = function() {
         if (secretWord === guessedWord.join("")) {
             return true
         }
-
     };
-
-
     var displayGuessedWord = function() {
         guessDisplay.innerHTML = guessedWord.join(" ");
     };
-
-
     guessForm.addEventListener("submit", function(event) {
         event.preventDefault();
         var foundLetter = checkLetterGuess(guessInput.value);
@@ -119,7 +118,6 @@
         guessInput.value = "";
     });
     displayGuessedWord();
-
     // Step 0: Read through the code and understand it
     // Step 1: Implement guessLetter
     // Step 2: Implement hasWon
@@ -132,7 +130,6 @@
     // - Display the letters they've already guessed
     // - Implement error checking for duplicate guesses
     // - Make way cooler win and lose states!
-
 </script>
 
 </body>

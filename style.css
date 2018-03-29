@@ -1,0 +1,68 @@
+.pic:hover {
+    animation-play-state: running;
+}
+@-webkit-keyframes pulse {
+    from {opacity: 0.0;
+        font-size: 100%;}
+    to {opacity: 1.0;
+        font-size: 200%;}}
+.main {color: rgb(255, 0, 5);}
+.appetizer {color: rgb(0, 33, 255);}
+.dessert {color: rgb(16, 153, 0);}
+body {background-color: rgb(230, 216, 152);
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'Courgette', cursive;}
+h2 {font-family: "Rock Salt", cursive;
+    margin: auto;
+    width: 150px}
+h1 {font-family: "Satisfy", cursive;
+    margin: auto;
+    width: 300px}
+h3 {font-family: "Seaweed Script", cursive;
+    margin: auto;
+    width: 200px}
+table {border: 5px solid black;
+    margin: auto;
+    width: 500px;}
+ol, ul, li {border: 1px solid black;
+    margin: auto;
+    width: 400px;}
+th, td {border: 5px solid black;}
+.pic {border: 15px ridge darkgrey;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;}
+.navbarul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+<body>
+  <style>
+    body {background-color: #ccc; 
+      font-family: Courgette;}
+    fieldset {color: #45f5;}
+    legend {font-weight: bold;
+      font-size: 20px;}
+    h1 {color: #45f5;
+      text-align: center;
+      font-family: Dancing Script;
+      font-size: 40px;}
+    label {font-size: 15px;}
+  </style>
+
+  <h1>Exciting Quiz Time!</h1>
+  
+  <form id="quiz-form">
+    
+    <fieldset>
+      <legend>What language is this programmed in?</legend>
+      <label><input name="question1" value="javascript" type="radio">JavaScript</label><br>
+      <label><input name="question1" value="python" type="radio">Python</label><br>
+      <label><input name="question1" value="java" type="radio">Java</label><br>
+    </fieldset>
+   
+    <fieldset>
+      <legend>What language do you use to decorate a website?</legend>
+      <label><input name="question2" value="javascript" type="radio">JavaScript</label><br>
+      <label><input name="question2" value="python" type="radio">Python</label><br>
+      <label><input name="question2" value="css" type="radio">CSS</label><br>
+    </fieldset>
+    
+    <fieldset>
+      <legend>What language should you use to make a website?</legend>
+      <label><input name="question3" value="javascript" type="radio">JavaScript</label><br>
+      <label><input name="question3" value="html" type="radio">HTML</label><br>
+      <label><input name="question3" value="css" type="radio">CSS</label><br>
+    </fieldset>
+    
+    <fieldset>
+      <legend>What language did we learn in the fisrt semester?</legend>
+      <label><input name="question4" value="css" type="radio">CSS</label><br>
+      <label><input name="question4" value="python" type="radio">Python</label><br>
+      <label><input name="question4" value="java" type="radio">Java</label><br>
+    </fieldset>
+    
+    <fieldset>
+      <legend>Before we put code into Github, where do we test it out?</legend>
+      <label><input name="question5" value="webstorm" type="radio">WebStorm</label><br>
+      <label><input name="question5" value="pycharm" type="radio">PyCharm</label><br>
+      <label><input name="question5" value="github" type="radio">GitHub</label><br>
+    </fieldset>
+    
+    
+    
+    <button type="submit">Check me</button>
+  </form>
+  
+  <div id="results"></div>
+  
+  <script>
+    var score = 0
+    var quizForm = document.getElementById("quiz-form");
+    quizForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+    
+      // resultsDiv is the div to display the results in
+      var resultsDiv = document.getElementById("results");
+        
+      // answer1 stores whatever <input> element that they checked
+      //  or null if they didn't check any answer
+      var answer1 = document.querySelector('[name="question1"]:checked');
+      var answer2 = document.querySelector('[name="question2"]:checked');
+      var answer3 = document.querySelector('[name="question3"]:checked');
+      var answer4 = document.querySelector('[name="question4"]:checked');
+      var answer5 = document.querySelector('[name="question5"]:checked');
+      if (!answer1 || !answer2 || !answer3 || !answer4 || !answer5) {
+        resultsDiv.innerHTML = "You didn't check anything! Sadface";}
+        // answer1.value is the value attribute of the checked <input>
+      if (answer1.value === "javascript") {
+      score += 5;}
+      if (answer2.value === "css") {
+      score += 5;}
+      if (answer3.value === "html") {
+      score += 5;}
+      if (answer4.value === "python") {  
+      score += 5;}
+      if (answer5.value === "webstorm") {
+      score += 5;}
+      if (answer1.value === "javascript" && answer2.value === "css" && answer3.value === "html" && answer4.value === "python" && answer5.value === "webstorm") {  
+        resultsDiv.innerHTML = "You got it! Your score was " + score + ".";
+      } 
+      else {
+        resultsDiv.innerHTML = "You got some wrong. Try again! Your score was " + score + ".";
+        }
+       
+      });
+    
+    
+  </script>
+</body>
+</html>

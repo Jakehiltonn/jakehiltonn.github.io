@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="style.css">
 <head>
+<body>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 </head>
-
-<body>
   <h1>JJakeyJJ's Cook Book</h1>
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-
 <ul class="navbarul">
     <li><a class="active" href="index.html">Home</a></li>
     <li><a href="index4.html">Appetizers</a></li>
@@ -23,14 +20,15 @@
 </ul>
   <style>
     body {background-color: #ccc; 
-      font-family: Courgette;}
-    fieldset {color: #45f5;}
+      font-family: Courgette;
+      color: #699dff;}
     legend {font-weight: bold;
-      font-size: 20px;}
-    h1 {color: #45f5;
-      text-align: center;
+      font-size: 20px;
+      color: #6161C1;}
+    h1 {text-align: center;
       font-family: Dancing Script;
-      font-size: 40px;}
+      font-size: 40px;
+      color: #3941ff;}
     label {font-size: 15px;}
   </style>
 
@@ -110,8 +108,10 @@
       if (answer5.value === "webstorm") {
       score += 5;}
       if (answer1.value === "javascript" && answer2.value === "css" && answer3.value === "html" && answer4.value === "python" && answer5.value === "webstorm") {  
-        resultsDiv.innerHTML = "You got it! Your score was " + score + ".";
-      } 
+        resultsDiv.innerHTML = "You got it! Your score was " + score + ".";}
+      if (answer1.value !== "javascript" && answer2.value !== "css" && answer3.value !== "html" && answer4.value !== "python" && answer5.value !== "webstorm") {  
+        resultsDiv.innerHTML = "You got them all wrong! Your score was " + score + ".";}
+       
       else {
         resultsDiv.innerHTML = "You got some wrong. Try again! Your score was " + score + ".";
         }
